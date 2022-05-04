@@ -1,9 +1,6 @@
-const videoUpdater = require('./videoUpdater');
+const videoUpdater = require('./ytMetadata');
 
-console.log("> Testing out the wrapper...");
-// insert video ID to updateVideoInfo function
-// i.e.: https://www.youtube.com/watch?v=dQw4w9WgXcQ where 'dQw4w9WgXcQ' is the video ID
-// make sure it's your own video though, otherwise errors will knock on your door init!
+console.log("> YouTube Metadata wrapper testing...");
 
 videoUpdater.getVideoMetadata('kXhapq5SN1I', (data) => {
     console.log(data);
